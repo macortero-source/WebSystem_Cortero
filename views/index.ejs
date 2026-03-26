@@ -1,0 +1,12 @@
+<h1> Hello <%=username%></h1> 
+
+<%if (isLoggedIn) {%> 
+<p>Status:Logged In</p> 
+<%} %> 
+
+<ul> 
+<%users.forEach(user=> {%> 
+  <li><%=user%></li> 
+<%})%> 
+</ul> 
+res. render()
